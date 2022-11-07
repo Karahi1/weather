@@ -3,7 +3,7 @@ import { View, Text, Image, ScrollView, Pressable } from 'react-native';
 import StyleSheet from './../Styles';
 
 const URL= 'https://newsapi.org/v2';
-const APIKEY = 'f133acc08ab0465588722c5f1725a6eb';
+const APIKEY = process.env.APIKEY;
 
 export default function News({navigation}) {
     const [error, setError] = useState(null);
